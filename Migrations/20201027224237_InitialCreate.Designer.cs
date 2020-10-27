@@ -9,14 +9,14 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    [Migration("20200928134636_InitialCreate")]
+    [Migration("20201027224237_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.8");
+                .HasAnnotation("ProductVersion", "3.1.9");
 
             modelBuilder.Entity("MvcMovie.Models.Movie", b =>
                 {
@@ -24,10 +24,10 @@ namespace MvcMovie.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Genre")
+                    b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
+                    b.Property<string>("Genre")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ReleaseDate")

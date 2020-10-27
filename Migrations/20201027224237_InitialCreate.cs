@@ -16,7 +16,7 @@ namespace MvcMovie.Migrations
                     Title = table.Column<string>(nullable: true),
                     ReleaseDate = table.Column<DateTime>(nullable: false),
                     Genre = table.Column<string>(nullable: true),
-                    Price = table.Column<decimal>(nullable: false)
+                    Description = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
