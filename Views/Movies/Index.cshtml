@@ -4,50 +4,27 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 id="title">Cine</h1>
 
 <p>
-    <a asp-action="Create">Solictar filme</a>
+    <a id ="parag" asp-action="Create">Solictar filme</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Remover</a>
-            </td>
-        </tr>
+    <div class="container-movie">
+        <a asp-action="Details" asp-route-id="@item.Id">
+            <img src="@item.Cover" />
+            @Html.DisplayFor(modelItem => item.Title)
+        </a>
+    </div>
 }
-    </tbody>
-</table>
+
+
+<Style>
+    #title{
+        color: ;
+    }
+    #parag{
+
+    }
+</Style>

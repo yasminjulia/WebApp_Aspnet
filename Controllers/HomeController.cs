@@ -23,6 +23,11 @@ namespace MvcMovie.Controllers
             return View();
         }
 
+        // public Task<IActionResult> Search(String search){
+        //     var result = new MoviesController().Search(search);
+        //     return result;
+        // }
+
         public IActionResult Privacy()
         {
             return View();

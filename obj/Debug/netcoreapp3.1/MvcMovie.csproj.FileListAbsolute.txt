@@ -19,7 +19,6 @@ C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreap
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.TagHelpers.input.cache
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.TagHelpers.output.cache
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.RazorCoreGenerate.cache
-C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -176,3 +175,4 @@ C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreap
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Edit.cshtml.g.cs
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Index.cshtml.g.cs
 C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Yasmin\IdeaProjects\projeto_com_aspnet_mvc\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

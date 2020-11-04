@@ -42,6 +42,14 @@ namespace MvcMovie.Controllers
 
             return View(movie);
         }
+        public async Task<IActionResult> Search(String? search)
+        {
+            var movie = await _context.Movie
+            .FromSqlInterpolated($"SELECT * from movie where title like '%{search}%'")
+            .ToListAsync();
+
+            return View(movie);
+        }
 
         // GET: Movies/Create
         public IActionResult Create()
@@ -54,7 +62,7 @@ namespace MvcMovie.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Description")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Description,Cover")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +94,7 @@ namespace MvcMovie.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Description")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Description,Cover")] Movie movie)
         {
             if (id != movie.Id)
             {

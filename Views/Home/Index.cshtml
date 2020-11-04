@@ -1,12 +1,73 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Varias queixas</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<div id="divBusca">
-  <input type="text" id="txtBusca" placeholder="Buscar..."/>
- <!-- <img src="https://arquivo.devmedia.com.br/naoexclusivo/JoelRodrigues/desenvolvendo-layouts-para-caixas-de-pesquisa-em-paginas-web/CaixasBusca2.jpg" id="btnBusca" alt="Buscar"/> -->
-</div>
+
+<!DOCTYPE cshtml>
+<html lang="en" style="height: 100%">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cine Search</title>
+</head>
+
+<body id="beckground-color" style="margin: 0; height: 100%">
+    <div id="main">
+        <img src="assets/logo.svg" id="logo" alt="cineLogo" />
+        <div id="inputMainBox">
+            <div id="inputBox">
+                <input type="text" placeholder="Pesquisar" id="inputText" />
+                <a id="searchMovie">
+                <img id="searchIcon" alt="searchIcon" src="assets/search-icon.jpeg" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    #beckground-color{
+        background-color: #1f1e1e;
+    }
+    #main {
+        background-color: #1f1e1e;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 50px;
+    }
+    
+    #logo {
+        margin: 30px;
+    }
+    
+    #inputMainBox {
+        display: flex;
+        justify-content: center
+    }
+    
+    #inputBox {
+        display: flex;
+        background-color: white;
+        padding: 5px;
+        width: 300px;
+        justify-content: space-between
+    }
+    
+    #inputText {
+        border: none;
+        outline: none
+    }
+    
+    #searchIcon {
+        width: 30px;
+        cursor: pointer;
+        margin-left: 10px
+    }
+    #searchMovie{
+        width: 40px;
+        height: 6px;
+    }
+</style>

@@ -16,5 +16,6 @@ namespace MvcMovie.Models
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
         public String Description { get; set; }
+        public String Cover {get;set;}
     }
 }
