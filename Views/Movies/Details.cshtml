@@ -3,11 +3,11 @@
 @{
     ViewData["Title"] = "Details";
 }
+<body>
+<h1>Cine</h1>
 
-<h1>Details</h1>
-
-<div>
-    <h4>Movie</h4>
+<div id="primeirinha">
+    <h4>Detalhes do filme</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -36,7 +36,34 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div id="segundinha">
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
 </div>
+
+    
+</body>
+
+
+
+
+<Style>
+    body{
+        background-color: #1f1e1e;
+    }
+    h1{
+        color: white;
+        background-color: #1f1e1e;
+    }
+    h4{
+        color: white;
+        background-color: #1f1e1e;
+    }
+    .row{
+        background-color: #1f1e1e;
+        color: white;
+    }
+    #segundinha{
+        color: white;
+    }
+</Style>

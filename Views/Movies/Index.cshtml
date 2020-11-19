@@ -3,28 +3,66 @@
 @{
     ViewData["Title"] = "Index";
 }
+<body>  
 
 <h1 id="title">Cine</h1>
 
 <p>
     <a id ="parag" asp-action="Create">Solictar filme</a>
 </p>
-
+<div id="foreache">
 @foreach (var item in Model) {
     <div class="container-movie">
-        <a asp-action="Details" asp-route-id="@item.Id">
+        <section class="container-strech">  
+
+            <div class="item"></div>
+	        <div class="item">Teste 2 do Item</div>
+	        <div class="item">Teste 3 do Item Agora Mesmo</div>
+	        <div class="item">Teste 4</div>
+            <a id="detalhe" asp-action="Details" asp-route-id="@item.Id">
             <img src="@item.Cover" />
             @Html.DisplayFor(modelItem => item.Title)
         </a>
+        </section>
+        
     </div>
 }
 
+</div>
+
+</body>
+
+
+
 
 <Style>
+    body{
+        background-color: #1f1e1e;
+        width: 100%;
+    }
     #title{
-        color: ;
+        color: white;
+        background-color: #1f1e1e;
     }
     #parag{
-
+        color: white;
+        background-color: #1f1e1e;
     }
+    .container-movie{
+        background-color: #1f1e1e;
+        align-items: stretch;    
+        display: flex;    
+    }
+    .container-strech{
+        
+    }
+    #foreache{
+        width: 100%;
+    }
+    #detalhe{
+        width: 10%;
+        height: 10%;
+        padding: 5%;
+    }
+
 </Style>
