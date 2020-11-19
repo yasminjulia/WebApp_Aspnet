@@ -57,6 +57,14 @@ namespace MvcMovie.Models
                         Description = "The workaround for the SQLite limitations is to manually write migrations code to perform a table rebuild when something in the table changes.",
                         Cover = "assets/cover4.jpg"
                     }
+                    new Movie
+                    {
+                        Title = "A pele que habito",
+                        ReleaseDate = DateTime.Parse("1959-4-15"),
+                        Genre = "suspense",
+                        Description = "The workaround for the SQLite limitations is to manually write migrations code to perform a table rebuild when something in the table changes.",
+                        Cover = "assets/cover5.jpg"
+                    }
                 );
                 context.SaveChanges();
             }
